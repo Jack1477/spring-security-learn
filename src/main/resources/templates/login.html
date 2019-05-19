@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        input{
+            display: inline-block;
+            height:30px;
+            width:200px;
+            border:none;
+            border-bottom:1px solid black;
+            outline: none;
+            margin-top:20px;
+        }
+        input[type='submit']{
+            border:1px solid #e8e8e8;
+            background-color: deepskyblue;
+            color:white;
+            height:30px;
+            border-radius: 30px;
+        }
+        form{
+            display: block;
+            width:500px;
+            margin: auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form action="/api/v1/login.do" method="post">
+        <h1>Login</h1>
+        <input type="text" placeholder="Username" name="username"> <br>
+        <input type="password" placeholder="Password" name="password"> <br>
+        <input type="submit" value="Login">
+    </form>
+</body>
+</html>
